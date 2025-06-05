@@ -1,0 +1,18 @@
+1. When I set other values unchanged and simply control the n_samples = [ 100, 200, 1000 ], the more the sample value, 
+the more the real coefficients are concentrated, and the paths are also more concentrated and stable.
+The more informative the number of real coefficients, the more concentrated, the more paths, 
+the correlation between variables may be more complex, resulting in multiple coefficients in close proximity to each other, 
+so that the path diagram is more crowded and tends to converge to 0, the more the path diagram will be more stable, and the more the path will be more stable.
+
+
+
+Exercise 3: Interpretation
+by this class ,i know Lasso‘s L1 penalty term compresses certain coefficients to zero, thus eliminating irrelevant features, 
+but Ridge's L2 penalty term only makes the coefficients smaller and does not eliminate any features altogether.
+In some areas, Lasso allows me know the main factors more quickly than Ridge. So like in some study about public surrounding , 
+i prefer to use Lasso to know which factor more influential. For example,  'rainfall','heatwave','employment rate','unemployment rate',
+'rate of enter primary school','rate of register in uni',which factors affect the GDP strongly in one country. In this case ,i will use lasso
+rather than Ridge.
+For the limitations of Lasso for feature selection,because of the L1 penalty term , Lasso may choose one randomly when the features are highly correlated.
+like when we studying economic growth ,investment and savings may highly correlated,and Lasso may choose one of them. 
+So lasso's feature independence is too strong, may not suitable to use when we do some study with stronger covariance.
